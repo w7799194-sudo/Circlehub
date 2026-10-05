@@ -12,7 +12,7 @@
 
         body {
             background-color: var(--beat-color-pulse);
-            background-image: radial-gradient(circle at center, rgba(255, 30, 30, 0.15) 0%, transparent 80%);
+            background-image: radial-gradient(circle at center, rgba(34, 197, 94, 0.15) 0%, transparent 80%);
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
@@ -80,8 +80,8 @@
             color: #ffffff;
             letter-spacing: 3px;
             text-transform: uppercase;
-            text-shadow: 0 0 15px rgba(255, 51, 51, 0.9), 
-                         0 0 30px rgba(255, 51, 51, 0.5);
+            text-shadow: 0 0 15px rgba(34, 197, 94, 0.9), 
+                         0 0 30px rgba(34, 197, 94, 0.5);
             animation: pulseText 2s infinite ease-in-out;
         }
 
@@ -94,8 +94,8 @@
             width: 150px;
             height: 150px;
             object-fit: cover;
-            border: 5px solid #ff1111;
-            box-shadow: 0 0 calc(20px + var(--beat-glow)) rgba(255, 10, 10, 0.6);
+            border: 5px solid #22c55e;
+            box-shadow: 0 0 calc(20px + var(--beat-glow)) rgba(34, 197, 94, 0.6);
             margin-bottom: 20px;
             border-radius: 50%;
         }
@@ -112,10 +112,10 @@
             font-size: 2.5rem;
             font-weight: bold;
             color: #ffffff;
-            text-shadow: 0 0 calc(15px + var(--beat-glow)) rgba(255, 10, 10, 0.8), 
-                         0 0 calc(30px + var(--beat-glow)) rgba(255, 0, 0, 0.5);
+            text-shadow: 0 0 calc(15px + var(--beat-glow)) rgba(34, 197, 94, 0.8), 
+                         0 0 calc(30px + var(--beat-glow)) rgba(34, 197, 94, 0.5);
             letter-spacing: 2px;
-            border-right: 3px solid #ff1111;
+            border-right: 3px solid #22c55e;
             white-space: nowrap;
             background: transparent;
             padding-right: 4px;
@@ -124,7 +124,7 @@
 
         @keyframes blink {
             from, to { border-color: transparent }
-            50% { border-color: #ff1111; }
+            50% { border-color: #22c55e; }
         }
 
         .links-container {
@@ -151,14 +151,14 @@
 
         .card-link:hover {
             transform: translateY(-3px);
-            border-color: #ff1111;
+            border-color: #22c55e;
             box-shadow: 0 6px 25px rgba(255, 10, 10, 0.5);
         }
 
         .btn-name {
             font-size: 1.25rem;
             font-weight: bold;
-            color: #ff3333;
+            color: #4ade80;
             margin-bottom: 5px;
         }
 
@@ -171,11 +171,11 @@
         /* Subscription Required Block Module */
         .sub-locker {
             background: linear-gradient(135deg, #121218 0%, #171724 100%);
-            border: 2px solid #ff1111;
+            border: 2px solid #22c55e;
             border-radius: 16px;
             padding: 30px;
             text-align: center;
-            box-shadow: 0 0 35px rgba(255, 17, 17, 0.35);
+            box-shadow: 0 0 35px rgba(34, 197, 94, 0.35);
             max-width: 440px;
             width: 100%;
             box-sizing: border-box;
@@ -188,7 +188,7 @@
             margin-top: 0;
             font-size: 1.6rem;
             letter-spacing: 1px;
-            text-shadow: 0 0 10px rgba(255, 17, 17, 0.6);
+            text-shadow: 0 0 10px rgba(34, 197, 94, 0.6);
         }
 
         .sub-locker p {
@@ -199,7 +199,7 @@
         }
 
         .locker-btn {
-            background: #ff1111;
+            background: #22c55e;
             color: #ffffff;
             border: none;
             padding: 14px 20px;
@@ -213,11 +213,11 @@
             margin-bottom: 15px;
             width: 100%;
             box-sizing: border-box;
-            box-shadow: 0 4px 15px rgba(255, 17, 17, 0.2);
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.2);
         }
 
         .locker-btn:hover {
-            background: #e60000;
+            background: #16a34a;
             transform: translateY(-1px);
         }
 
@@ -230,11 +230,11 @@
 
         .locker-btn.verify-btn:hover {
             background: #272736;
-            border-color: #ff1111;
+            border-color: #22c55e;
         }
 
         .error-msg {
-            color: #ff3333;
+            color: #4ade80;
             font-size: 0.85rem;
             margin-top: -5px;
             margin-bottom: 15px;
@@ -253,7 +253,7 @@
     </div>
 
     <div class="main-content" id="site-content">
-        <img src="151.png" alt="StripesVR Profile Picture" class="profile-pic">
+        <img src="circlehub-pfp.png" alt="StripesVR Profile Picture" class="profile-pic">
 
         <div class="title-container">
             <div class="typewriter-text" id="typewriter"></div>
@@ -396,7 +396,7 @@
             ctx.strokeStyle = color;
             ctx.lineWidth = width;
             ctx.shadowBlur = glowSize;
-            ctx.shadowColor = '#ff0000';
+            ctx.shadowColor = '#16a34a';
             ctx.lineCap = 'round';
             ctx.lineJoin = 'round';
 
@@ -504,7 +504,7 @@
             if (lightningOpacity > 0) {
                 ctx.globalAlpha = lightningOpacity;
                 activeStrikes.forEach(path => {
-                    drawLightning(path, 5, 35, '#ff3333');
+                    drawLightning(path, 5, 35, '#4ade80');
                     drawLightning(path, 1.5, 5, '#ffffff');
                 });
                 lightningOpacity *= 0.75; 
@@ -513,8 +513,8 @@
 
             let normalized = bassValue / 255;
             let glowIntensity = normalized * 50; 
-            let redShift = Math.floor(13 + (lightningOpacity * 35)); 
-            let colorPulse = `rgb(${redShift}, 13, 17)`;
+            let greenShift = Math.floor(13 + (lightningOpacity * 55)); 
+            let colorPulse = `rgb(13, ${greenShift}, 17)`;
 
             document.documentElement.style.setProperty('--beat-glow', `${glowIntensity}px`);
             document.documentElement.style.setProperty('--beat-color-pulse', colorPulse);
